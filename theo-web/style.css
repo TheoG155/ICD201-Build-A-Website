@@ -4,6 +4,7 @@
 	Description: Assignment For Computer Science. This is the Main Page of the website.
 */
 
+
 body {
   font-family: Arial, sans-serif;
   font-size: 16px;
@@ -43,10 +44,202 @@ a:hover {
 
 /* Styling for regular content section */
 div.section {
-	background-color: #eef;
+	background-color: #white;
+    padding: 20px 0;
+}
+
+div.section img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+div.section p {
+    margin: 20px 0;
+}
+
+div.section ul,
+div.section ol {
+    margin: 20px 0 20px 40px;
+}
+
+div.section a {
+    display: inline-block;
+    margin: 5 px 0;
 }
 
 /* Unique styling for gallery page */
 div.gallery-section {
 	background-color: #eef;
+}
+
+/* Unique styling for results page */
+div.results-section {
+	background-color: #eef;
+}
+
+.styled-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.styled-table td,
+.styled-table th {
+    padding: 15px 20px; /* Increased padding */
+    text-align: left;
+    vertical-align: middle;
+}
+
+/* Center align the Rank column */
+.styled-table td:first-child,
+.styled-table th:first-child {
+    text-align: center;
+}
+
+.styled-table thead tr {
+    background-color: #003f5c; /* Match your header color scheme */
+    color: #ffffff;
+    font-size: 1.1em; /* Slightly larger headers */
+    letter-spacing: 0.5px;
+}
+
+/* Highlight the first place row */
+.styled-table tbody tr:first-child {
+    font-weight: bold;
+    background-color: rgba(0, 152, 121, 0.1); /* Light green background */
+}
+
+.styled-table tbody tr:hover {
+    background-color: #f1f8ff;
+    transition: background-color 0.2s ease;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f8f8f8; /* Lighter, more subtle alternate row color */
+}
+
+.styled-table {
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 8px;
+    overflow: hidden; /* For the rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.styled-table th {
+    border-bottom: 2px solid #007065;
+}
+
+.styled-table td {
+    border-bottom: 1px solid #e6e6e6; /* Lighter borders between rows */
+}
+
+.styled-table tbody tr:last-of-type td {
+    border-bottom: none; /* Remove border from last row */
+}
+
+/* Make table responsive on smaller screens */
+@media screen and (max-width: 600px) {
+    .styled-table {
+        min-width: 100%;
+        margin: 0;
+    }
+    
+    .styled-table td, 
+    .styled-table th {
+        padding: 10px;
+        font-size: 0.9em;
+    }
+}
+
+/* Style for sail numbers to make country codes stand out */
+.styled-table .sail-number {
+    font-family: monospace;
+    letter-spacing: 1px;
+}
+
+.results-container {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.results-title {
+    color: #003f5c;
+    margin-bottom: 20px;
+    font-size: 24px;
+    border-bottom: 2px solid #eaeaea;
+    padding-bottom: 10px;
+}
+
+.results-title {
+    color: #003f5c;
+    margin-bottom: 20px;
+    font-size: 24px;
+    border-bottom: 2px solid #eaeaea;
+    padding-bottom: 10px;
+}
+
+/* Navigation link styling */
+.nav-link {
+    display: inline-block;
+    margin: 20px 0;
+    padding: 8px 16px;
+    background-color: #003f5c;
+    color: white;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+}
+
+.nav-link:hover {
+    background-color: #005580;
+    text-decoration: none;
+}
+
+/* Gallery grid layout */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+/* Add responsive image styling */
+.results-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
+
+/* Make gallery table responsive */
+.gallery table {
+    width: 100%;
+}
+
+.gallery table th {
+    padding: 10px;
+    width: 50%;
+}
+
+.gallery table img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+@media screen and (max-width: 768px) {
+    .gallery table th {
+        display: block;
+        width: 100%;
+    }
 }
